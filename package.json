@@ -1,0 +1,14 @@
+{
+  "name": "weatherparser",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "2.5.x",
+    "mongodb": "1.2.x",
+    "mongoskin": "0.5.x",
+    "dateformat": "1.x"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  }
+}
