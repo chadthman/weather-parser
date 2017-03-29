@@ -63,7 +63,7 @@ app.get('/location', function (request, response) {
         else {
             if (count > 0) {
                 db.collection('currentForecast').find({
-                    "timestamp": {$lte: new Date(new Date(new Date().getTime() - 1 * 60 * 1000).toISOString())},
+                    "timestamp": {$lte: new Date(new Date(new Date().getTime() - 360 * 60 * 1000).toISOString())},
                     "latitude": {$eq: Number(latitudes[0]) - 90},
                     "longitude": {$eq: Number(longitudes[0])}
                 }).toArray(function (err, result) {
